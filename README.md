@@ -55,7 +55,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
   
   ...
   
-  **Join Data**
+- **Join Data**
   
   Copy all the images of the folders to a new folder (where we will leave all the images), we recommend the name of "dataset_cus".
 
