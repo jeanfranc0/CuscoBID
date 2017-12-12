@@ -39,7 +39,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - **Format**
 
-  Change format to class_imagenumber.jpg. If you use BUNT you can execute the following sentence:
+  Change format to class_imagenumber.jpg. If you use Ubuntu you can execute the following sentence:
       
   //enter to folder catedral and run; output 01_0001.jpg, 01_0002.jpg, ....
       
