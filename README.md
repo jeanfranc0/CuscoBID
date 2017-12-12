@@ -38,18 +38,22 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 ## Data Preparation
 
 - **Format**
-  - Change format to class_imagenumber.jpg. If you use BUNT you can execute the following sentence:
+  Change format to class_imagenumber.jpg. If you use BUNT you can execute the following sentence:
       
-      //enter to folder catedral and run
+  //enter to folder catedral and run; output 01_0001.jpg, 01_0002.jpg, ....
       
-      ls *.jpg | awk 'BEGIN{ class=1; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+  ls *.jpg | awk 'BEGIN{ class=1; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
       
-      //enter to folder coricancha and run
+  //enter to folder coricancha and run; output 02_0001.jpg, 02_0002.jpg, ....
+   
+  ls *.jpg | awk 'BEGIN{ class=2; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
       
-      ls *.jpg | awk 'BEGIN{ class=2; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+  //enter to folder garcilaso and run; output 03_0001.jpg, 01_0003.jpg, ....
       
-      //enter to folder garcilaso and run
-      
-      ls *.jpg | awk 'BEGIN{ class=3; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+  ls *.jpg | awk 'BEGIN{ class=3; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+  
+  **Join Data**
+  Copy all the images of the folders to a new folder (where we will leave all the images), we recommend the name of "dataset_cus".
+
   
               
