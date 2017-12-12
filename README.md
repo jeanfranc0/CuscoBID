@@ -38,6 +38,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 ## Data Preparation
 
 - **Format**
+
   Change format to class_imagenumber.jpg. If you use BUNT you can execute the following sentence:
       
   //enter to folder catedral and run; output 01_0001.jpg, 01_0002.jpg, ....
@@ -52,7 +53,10 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
       
   ls *.jpg | awk 'BEGIN{ class=3; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
   
+  ...
+  
   **Join Data**
+  
   Copy all the images of the folders to a new folder (where we will leave all the images), we recommend the name of "dataset_cus".
 
   
