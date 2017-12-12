@@ -41,10 +41,15 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
   - Change format to class_imagenumber.jpg. If you use BUNT you can execute the following sentence:
       
       //enter to folder catedral and run
+      
       ls *.jpg | awk 'BEGIN{ class=1; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+      
       //enter to folder coricancha and run
+      
       ls *.jpg | awk 'BEGIN{ class=2; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+      
       //enter to folder garcilaso and run
+      
       ls *.jpg | awk 'BEGIN{ class=3; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
   
               
