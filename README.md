@@ -37,57 +37,14 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 ## Data Preparation
 
-- **Deep Learning: Practice and Trends**
-
-  Nando de Freitas · Scott Reed · Oriol Vinyals
-
-  Slides · [Video](https://www.youtube.com/watch?v=YJnddoa8sHk) · Code
-
-- **Reinforcement Learning with People**
-
-  Emma Brunskill
-
-  Slides · Video · Code
-
-- **A Primer on Optimal Transport**
-
-  Marco Cuturi · Justin M Solomon
-
-  [Slides](https://www.dropbox.com/s/55tb2cf3zipl6xu/aprimeronOT.pdf) · Video · Code
-
-- **Deep Probabilistic Modelling with Gaussian Processes**
-
-  Neil D Lawrence
-
-  [Slides](http://inverseprobability.com/talks/lawrence-nips17/deep-probabilistic-modelling-with-gaussian-processes.html) · Video · Code    
-
-- **Fairness in Machine Learning**
-
-  Solon Barocas · Moritz Hardt
-
-  [Slides](http://mrtz.org/nips17/#/) · Video · Code
-
-- **Statistical Relational Artificial Intelligence: Logic, Probability and Computation**
-
-  Luc De Raedt · David Poole · Kristian Kersting · Sriraam Natarajan
-
-  Slides · Video · Code
-
-- **Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning**
-
-  Josh Tenenbaum · Vikash K Mansinghka
-
-  Slides · Video · Code
-
-- **Differentially Private Machine Learning: Theory, Algorithms and Applications**
-
-  Kamalika Chaudhuri · Anand D Sarwate
-
-  [Slides](http://www.ece.rutgers.edu/~asarwate/nips2017/NIPS17_DPML_Tutorial.pdf) · Video · Code
-
-- **Geometric Deep Learning on Graphs and Manifolds**
-
-  Michael Bronstein · Joan Bruna · arthur szlam · Xavier Bresson · Yann LeCun
-
-  [Slides](https://www.dropbox.com/s/zdosxw3nc3f1p2r/NIPS-GDL.pdf) · Video · Code
+- **Format**
+  - Change format to class_imagenumber.jpg. If you use BUNT you can execute the following sentence:
+      
+      //enter to folder catedral and run
+      ls *.jpg | awk 'BEGIN{ class=1; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+      //enter to folder coricancha and run
+      ls *.jpg | awk 'BEGIN{ class=2; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+      //enter to folder garcilaso and run
+      ls *.jpg | awk 'BEGIN{ class=3; photo=1; }{ printf "mv \"%s\" %02d_%04d.jpg\n", $0, class, photo++ }' | bash
+  
               
