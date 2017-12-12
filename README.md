@@ -12,8 +12,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Requirements](#requirements)
 
-- [Tutorials](#tutorials)
-
+- [Data Preparation](#data-preparation)
 
 ## Requirements
 
@@ -36,8 +35,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
   
   - SciKitLearn 0.18.1
 
-
-## Tutorials
+## Data Preparation
 
 - **Deep Learning: Practice and Trends**
 
