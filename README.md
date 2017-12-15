@@ -97,21 +97,65 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - **Build Bag-of-visual-Words**
 
-  This script needs to be executed twice. one for the train data and the other for the test data.
+  This script needs to be executed twice to extract bag of visual words. one for the train data and the other for the test data.
     
-  python bovw.py ~/Path-to-train-dataset/ codebook_filename output_bovw_filename output_labels_filename
+  python bovw.py ~/Path-to-train-dataset-train/ codebook_filename output_bovw_filename_train output_labels_filename_train
    
   Where:
   
-    - ~/Path-to-train-dataset/ : Directory of input images(train and test)
+    - ~/Path-to-train-dataset/ : Directory of input images(train)
     
     - codebook_filename : Codebook file (*.npy)
     
-    - output_bovw_filename : Output file(*.npy) with visual words
+    - output_bovw_filename_train : Output file(*.npy) with visual words
     
-    - output_labels_filename : Output file(*.npy) with labels of visual words
+    - output_labels_filename_train : Output file(*.npy) with labels of visual words
+   
+   python bovw.py ~/Path-to-train-dataset-test/ codebook_filename output_bovw_filename_test output_labels_filename_test
+    
+    Where:
+  
+    - ~/Path-to-train-dataset-test/ : Directory of input images(test)
+    
+    - codebook_filename : Codebook file (*.npy)
+    
+    - output_bovw_filename_test : Output file(*.npy) with visual words
+    
+    - output_labels_filename_test : Output file(*.npy) with labels of visual words
 
 - **Classification**
+
+  We use four different classification methods. Support Vector Machine, Random Forest and k Nearest Neighbor are in the script classify_train_test.py. While Neural Network is executed in script cnn_test_tinc3.py(you can modify parameters such as the number of neurons, number of layers and others).
+  
+  python classify_train_test.py dataset_train_filename labels_train_filename dataset_test_filename labels_test_filename method output_filename
+  
+  Where:
+  
+    - dataset_train_filename : equals to output_bovw_filename_train, Dataset train file name (*.npy)
+    
+    - labels_train_filename : equals to output_labels_filename_train, Label train filename (*.npy)
+    
+    - dataset_test_filename : equals to output_bovw_filename_test, Dataset test file name (*.npy)
+    
+    - labels_test_filename : equals to output_labels_filename_test, Label test filename (*.npy)
+    
+    - method : Classifier (svm, linear_svm, rf, knn), where svm is equals to SVM with kernel RBF and linear_svm is equals to SVM with kernel lineal
+    
+    - output_filename : Predicted output filename(*.npy)
+    
+  python classify_train_test.py file_path_train file_path_train_cls file_path_test file_path_test_cls file_path_save_model
+
+  Where:
+  
+    - file_path_train : equals to output_bovw_filename_train, Dataset train file name (*.npy)
+    
+    - file_path_train_cls : equals to output_labels_filename_train, Label train filename (*.npy)
+    
+    - file_path_test : equals to output_bovw_filename_test, Dataset test file name (*.npy)
+    
+    - file_path_test_cls : equals to output_labels_filename_test, Label test filename (*.npy)
+    
+    - file_path_save_model : Predicted output filename(*.ckpt)
 
   
   
