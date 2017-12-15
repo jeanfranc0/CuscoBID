@@ -58,6 +58,24 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 - **Join Data**
   
   Copy all the images of the folders to a new folder (where we will leave all the images), we recommend the name of "dataset_cus".
+  
+- **Split Train and Test**
 
+  We created N folders and randomdly split the dataset in train and test. Run script
+  
+  python split_dataset.py ~/Path-to-original-dataset/ nsplits perc_train ~/Path-to-output-dataset/
+  
+  Where:
+  
+    - ~/Path-to-original-dataset/ : Directory of input images(dataset_cus)
+    
+    - nsplits : Number of folders splits
+    
+    - perc_train : Percentage of train samples
+    
+    - ~/Path-to-output-dataset/ : Output path
+    
+ 
+  
   
               
