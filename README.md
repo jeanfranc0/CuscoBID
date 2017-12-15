@@ -14,6 +14,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Data Preparation](#data-preparation)
 
+- [Bag-of-Words](#bag-of-words)
+
 ## Requirements
 
 - **To Transfer Learning**
@@ -75,7 +77,42 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
     
     - ~/Path-to-output-dataset/ : Output path
     
- 
+## Bag-of-Words
+    
+- **Build Codebook**
+
+  We used SURF to feature extraction. However, if you want to use another algorithm (for example: SIFT). You must change the line of code 'desc_method = cv2.SURF()' for 'desc_method = cv2.SIFT()' in script bovw_utils.py. Finally, to create the codebook, you need to run.
+  
+  python codebook.py ~/Path-to-train-dataset/ codebook_size codebook_method ~/Path-to-output-dataset/
+  
+  Where:
+  
+    - ~/Path-to-train-dataset/ : Directory of input images(train)
+    
+    - codebook_size : Size of the dictionary
+    
+    - codebook_method : Codebook method ('random, kmeans, st_kmeans, fast_st_kmeans). We we recommend using fast_st_kmeans because it is faster
+    
+    - codebook_filename : Output file(*.npy)
+
+- **Build Bag-of-visual-Words**
+
+  This script needs to be executed twice. one for the train data and the other for the test data.
+    
+  python bovw.py ~/Path-to-train-dataset/ codebook_filename output_bovw_filename output_labels_filename
+   
+  Where:
+  
+    - ~/Path-to-train-dataset/ : Directory of input images(train and test)
+    
+    - codebook_filename : Codebook file (*.npy)
+    
+    - output_bovw_filename : Output file(*.npy) with visual words
+    
+    - output_labels_filename : Output file(*.npy) with labels of visual words
+
+- **Classification**
+
   
   
               
