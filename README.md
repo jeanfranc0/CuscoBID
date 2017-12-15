@@ -125,7 +125,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - **Classification**
 
-  We use four different classification methods. Support Vector Machine, Random Forest and k Nearest Neighbor are in the script classify_train_test.py. While Neural Network is executed in script cnn_test_tinc3.py(you can modify parameters such as the number of neurons, number of layers and others).
+  We use four different classification methods. Support Vector Machine, Random Forest and k Nearest Neighbor are in the script classify_train_test.py. 
   
   python classify_train_test.py dataset_train_filename labels_train_filename dataset_test_filename labels_test_filename method output_filename
   
@@ -142,6 +142,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
     - method : Classifier (svm, linear_svm, rf, knn), where svm is equals to SVM with kernel RBF and linear_svm is equals to SVM with kernel lineal
     
     - output_filename : Predicted output filename(*.npy)
+    
+  While Neural Network is executed in script cnn_test_tinc3.py(you can modify parameters such as the number of neurons, number of layers and others).
     
   python classify_train_test.py file_path_train file_path_train_cls file_path_test file_path_test_cls file_path_save_model
 
