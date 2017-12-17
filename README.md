@@ -20,6 +20,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Reference](reference) 
 
+- [Publication](publication)
+
 ## Requirements
 
 - **To Transfer Learning**
@@ -262,9 +264,12 @@ We use different pre-trained models of convolutional neural networks, these arch
  - Tittle: [Towards accurate building recognition using convolutional neural networks](http://ieeexplore.ieee.org/document/8079686/)
  
  - Authors: 
-  - Jeanfranco D. Farfan-Escobedo. Escuela Profesional de Ingeniería Informática y de Sistemas, Universidad Nacional de San Antonio Abad del Cusco, Peru
-  - Lauro Enciso-Rodas. Escuela Profesional de Ingeniería Informática y de Sistemas, Universidad Nacional de San Antonio Abad del Cusco, Peru
-  - John E. Vargas-Muñoz. Institute of Computing - University of Campinas, Campinas, Brazil
+  
+    - Jeanfranco D. Farfan-Escobedo. Escuela Profesional de Ingeniería Informática y de Sistemas, Universidad Nacional de San Antonio Abad del Cusco, Peru
+  
+    - Lauro Enciso-Rodas. Escuela Profesional de Ingeniería Informática y de Sistemas, Universidad Nacional de San Antonio Abad del Cusco, Peru
+  
+    - John E. Vargas-Muñoz. Institute of Computing - University of Campinas, Campinas, Brazil
  
  ## Reference
  
