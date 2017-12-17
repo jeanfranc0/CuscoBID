@@ -18,7 +18,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Transfer Learning](#transfer-learning)
 
-- 
+- [Reference](reference) 
 
 ## Requirements
 
@@ -254,6 +254,30 @@ We use different pre-trained models of convolutional neural networks, these arch
     
    - file_path_save_model : Predicted output filename(*.ckpt)
   
+ ## Publication
+ 
+ You can review our paper, published in the IEEE Xplore Digital Library
+ 
+ - Tittle: [Towards accurate building recognition using convolutional neural networks](http://ieeexplore.ieee.org/document/8079686/)
+ 
+ - Authors: 
+  - Jeanfranco D. Farfan-Escobedo. Escuela Profesional de Ingeniería Informática y de Sistemas, Universidad Nacional de San Antonio Abad del Cusco, Peru
+  - Lauro Enciso-Rodas. Escuela Profesional de Ingeniería Informática y de Sistemas, Universidad Nacional de San Antonio Abad del Cusco, Peru
+  - John E. Vargas-Muñoz. Institute of Computing - University of Campinas, Campinas, Brazil
+ 
+ ## Reference
+ 
+ Finally, if you use the database or the code, do not forget to reference the work.
+ 
+ @inproceedings{farfan2017towards,
+  title={Towards accurate building recognition using convolutional neural networks},
+  author={Farfan-Escobedo, Jeanfranco D and Enciso-Rodas, Lauro and Vargas-Mu{\~n}oz, John E},
+  booktitle={Electronics, Electrical Engineering and Computing (INTERCON), 2017 IEEE XXIV International Conference on},
+  pages={1--4},
+  year={2017},
+  organization={IEEE}
+}
+
   
   
    
