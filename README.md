@@ -169,7 +169,22 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - **Compute Transfer Values**
 
-We use different pre-trained models of convolutional neural networks, these architectures were provided by the framework [Keras](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3) ([VGG16, VGG19](https://arxiv.org/abs/1409.1556), [Xception](https://arxiv.org/abs/1610.02357)) and [Magnus Erik Hvass Pedersen](https://github.com/Hvass-Labs/TensorFlow-Tutorials)([Inception-V3](https://arxiv.org/abs/1512.00567))
+We use different pre-trained models of convolutional neural networks, these architectures were provided by the framework [Keras](https://github.com/fchollet/deep-learning-models) ([VGG16, VGG19](https://arxiv.org/abs/1409.1556), [Xception](https://arxiv.org/abs/1610.02357)) and [Magnus Erik Hvass Pedersen](https://github.com/Hvass-Labs/TensorFlow-Tutorials)([Inception-V3](https://arxiv.org/abs/1512.00567)).
+
+  - VGG16, VGG19 and Xception.
+  
+  Pre-trained weights can be automatically loaded upon instantiation. Weights are automatically downloaded if necessary, and cached locally in ~/.keras/models/.
+   
+  - Inception-V3
+  
+ First, you must download the pre-trained model of http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz. Second, unzip the model within the 'CNN-Transfer Learning' folder. Third, modify the model's path in the 'inception.py' file, for example: data_dir = "/home/jeanfranco/Documents/deep-learning-models_proy/inception-2015-12-05/"
+
+
+  
+  
+  
+   
+    
 
 
  
