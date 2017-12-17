@@ -169,7 +169,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - **Compute Transfer Values**
 
-We use different pre-trained models of convolutional neural networks, these architectures were provided by the framework [Keras](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3) ([VGG16, VGG19](https://arxiv.org/abs/1409.1556), [Xception](https://arxiv.org/abs/1610.02357)) and [Magnus Erik Hvass Pedersen](https://github.com/Hvass-Labs/TensorFlow-Tutorials)
+We use different pre-trained models of convolutional neural networks, these architectures were provided by the framework [Keras](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3) ([VGG16, VGG19](https://arxiv.org/abs/1409.1556), [Xception](https://arxiv.org/abs/1610.02357)) and [Magnus Erik Hvass Pedersen](https://github.com/Hvass-Labs/TensorFlow-Tutorials)([Inception-V3](https://arxiv.org/abs/1512.00567))
 
 
  
