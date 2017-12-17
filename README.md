@@ -186,35 +186,35 @@ We use different pre-trained models of convolutional neural networks, these arch
   python compute_transfer_values.py ~/Path-to-train-dataset-train/ dataset_type model_type data_augmentation output_data_train output_cls_train
   
    Where:
-  
+    
    - ~/Path-to-train-dataset-train/ : Directory of input images(train)
     
-   - dataset_type : choose method ('train',' test'), we recommend train
+    - dataset_type : choose method ('train',' test'), we recommend train
     
-   - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
+    - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
     
-   - data_augmentation : choose ('si', 'no')
+    - data_augmentation : choose ('si', 'no')
    
-   - output_data_train : Output transfer values (.npy)
+    - output_data_train : Output transfer values (.npy)
    
-   - output_cls_train : Output classes (.npy)
+    - output_cls_train : Output classes (.npy)
    To test.
 
   python compute_transfer_values.py ~/Path-to-train-dataset-test/ dataset_type model_type data_augmentation output_data_test output_cls_Test
   
    Where:
   
-   - ~/Path-to-train-dataset-train/ : Directory of input images(test)
+    - ~/Path-to-train-dataset-train/ : Directory of input images(test)
     
-   - dataset_type : choose method ('train',' test'), we recommend test
+    - dataset_type : choose method ('train',' test'), we recommend test
     
-   - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
+    - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
     
-   - data_augmentation : choose ('no')
+    - data_augmentation : choose ('no')
    
-   - output_data_test : Output transfer values (.npy)
+    - output_data_test : Output transfer values (.npy)
    
-   - output_cls_Test : Output classes (.npy)
+    - output_cls_Test : Output classes (.npy)
    
  - **Classification**
 
