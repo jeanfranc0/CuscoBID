@@ -200,7 +200,8 @@ We use different pre-trained models of convolutional neural networks, these arch
    - output_data_train : Output transfer values (.npy)
    
    - output_cls_train : Output classes (.npy)
-   To test.
+  
+  To test.
 
   python compute_transfer_values.py ~/Path-to-train-dataset-test/ dataset_type model_type data_augmentation output_data_test output_cls_Test
   
