@@ -177,9 +177,80 @@ We use different pre-trained models of convolutional neural networks, these arch
    
   - Inception-V3
   
- First, you must download the pre-trained model of http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz. Second, unzip the model within the 'CNN-Transfer Learning' folder. Third, modify the model's path in the 'inception.py' file, for example: data_dir = "/home/jeanfranco/Documents/deep-learning-models_proy/inception-2015-12-05/"
+ First, you must download the pre-trained model of http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz. Second, unzip the model within the 'CNN-Transfer Learning' folder. Third, modify the model's path in the 'inception.py' file, for example: data_dir = "/home/jeanfranco/Documents/deep-learning-models_proy/inception-2015-12-05/".
+ 
+ you need to execute the following script twice, one for the train data and the other for the test data. 
+ 
+ To train.
+ 
+  python compute_transfer_values.py ~/Path-to-train-dataset-train/ dataset_type model_type data_augmentation output_data_train output_cls_train
+  
+   Where:
+  
+   - ~/Path-to-train-dataset-train/ : Directory of input images(train)
+    
+   - dataset_type : choose method ('train',' test'), we recommend train
+    
+   - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
+    
+   - data_augmentation : choose ('si', 'no')
+   
+   - output_data_train : Output transfer values (.npy)
+   
+   - output_cls_train : Output classes (.npy)
+   To test.
 
+  python compute_transfer_values.py ~/Path-to-train-dataset-test/ dataset_type model_type data_augmentation output_data_test output_cls_Test
+  
+   Where:
+  
+   - ~/Path-to-train-dataset-train/ : Directory of input images(test)
+    
+   - dataset_type : choose method ('train',' test'), we recommend test
+    
+   - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
+    
+   - data_augmentation : choose ('no')
+   
+   - output_data_test : Output transfer values (.npy)
+   
+   - output_cls_Test : Output classes (.npy)
+   
+ - **Classification**
 
+  We use four different classification methods. Support Vector Machine, Random Forest and k Nearest Neighbor are in the script classify_train_test.py. 
+  
+  python classify_train_test.py output_data_train output_cls_train output_data_test output_cls_Test method output_filename
+  
+  Where:
+  
+    - output_data_train : Dataset train file name (*.npy)
+    
+    - output_cls_train : Label train filename (*.npy)
+    
+    - output_data_test : Dataset test file name (*.npy)
+    
+    - output_cls_Test : Label test filename (*.npy)
+    
+    - method : Classifier (svm, linear_svm, rf, knn), where svm is equals to SVM with kernel RBF and linear_svm is equals to SVM with kernel lineal
+    
+    - output_filename : Predicted output filename(*.npy)
+    
+  While Neural Network is executed in script cnn_test_tinc3.py(you can modify parameters such as the number of neurons, number of layers and others).
+    
+  python classify_train_test.py output_data_train output_cls_train output_data_test output_cls_Test file_path_save_model
+
+  Where:
+  
+    - output_data_train : Dataset train file name (*.npy)
+    
+    - output_cls_train : Label train filename (*.npy)
+    
+    - output_data_test : Dataset test file name (*.npy)
+    
+    - output_cls_Test : Label test filename (*.npy)
+    
+    - file_path_save_model : Predicted output filename(*.ckpt)
   
   
   
