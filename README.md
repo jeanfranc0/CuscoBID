@@ -18,6 +18,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Transfer Learning](#transfer-learning)
 
+- 
+
 ## Requirements
 
 - **To Transfer Learning**
@@ -71,13 +73,13 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
   
   Where:
   
-    - ~/Path-to-original-dataset/ : Directory of input images(dataset_cus)
+   - ~/Path-to-original-dataset/ : Directory of input images(dataset_cus)
     
-    - nsplits : Number of folders splits
+   - nsplits : Number of folders splits
     
-    - perc_train : Percentage of train samples
+   - perc_train : Percentage of train samples
     
-    - ~/Path-to-output-dataset/ : Output path
+   - ~/Path-to-output-dataset/ : Output path
     
 ## Bag-of-Words
 
@@ -91,13 +93,13 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
   
   Where:
   
-    - ~/Path-to-train-dataset/ : Directory of input images(train)
+   - ~/Path-to-train-dataset/ : Directory of input images(train)
     
-    - codebook_size : Size of the dictionary
+   - codebook_size : Size of the dictionary
     
-    - codebook_method : Codebook method ('random, kmeans, st_kmeans, fast_st_kmeans). We we recommend using fast_st_kmeans because it is faster
+   - codebook_method : Codebook method ('random, kmeans, st_kmeans, fast_st_kmeans). We we recommend using fast_st_kmeans because it is faster
     
-    - codebook_filename : Output file(*.npy)
+   - codebook_filename : Output file(*.npy)
 
 - **Build Bag-of-visual-Words**
 
@@ -189,32 +191,32 @@ We use different pre-trained models of convolutional neural networks, these arch
     
    - ~/Path-to-train-dataset-train/ : Directory of input images(train)
     
-    - dataset_type : choose method ('train',' test'), we recommend train
+   - dataset_type : choose method ('train',' test'), we recommend train
     
-    - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
+   - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
     
-    - data_augmentation : choose ('si', 'no')
+   - data_augmentation : choose ('si', 'no')
    
-    - output_data_train : Output transfer values (.npy)
+   - output_data_train : Output transfer values (.npy)
    
-    - output_cls_train : Output classes (.npy)
+   - output_cls_train : Output classes (.npy)
    To test.
 
   python compute_transfer_values.py ~/Path-to-train-dataset-test/ dataset_type model_type data_augmentation output_data_test output_cls_Test
   
    Where:
   
-    - ~/Path-to-train-dataset-train/ : Directory of input images(test)
-    
-    - dataset_type : choose method ('train',' test'), we recommend test
-    
-    - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
-    
-    - data_augmentation : choose ('no')
+   - ~/Path-to-train-dataset-train/ : Directory of input images(test)
    
-    - output_data_test : Output transfer values (.npy)
+   - dataset_type : choose method ('train',' test'), we recommend test
+    
+   - model_type : choose model type ('vgg16', 'vgg19', 'resnet', 'xception','inception')
+    
+   - data_augmentation : choose ('no')
    
-    - output_cls_Test : Output classes (.npy)
+   - output_data_test : Output transfer values (.npy)
+   
+   - output_cls_Test : Output classes (.npy)
    
  - **Classification**
 
@@ -224,17 +226,17 @@ We use different pre-trained models of convolutional neural networks, these arch
   
   Where:
   
-    - output_data_train : Dataset train file name (*.npy)
+   - output_data_train : Dataset train file name (*.npy)
     
-    - output_cls_train : Label train filename (*.npy)
+   - output_cls_train : Label train filename (*.npy)
     
-    - output_data_test : Dataset test file name (*.npy)
+   - output_data_test : Dataset test file name (*.npy)
     
-    - output_cls_Test : Label test filename (*.npy)
+   - output_cls_Test : Label test filename (*.npy)
     
-    - method : Classifier (svm, linear_svm, rf, knn), where svm is equals to SVM with kernel RBF and linear_svm is equals to SVM with kernel lineal
+   - method : Classifier (svm, linear_svm, rf, knn), where svm is equals to SVM with kernel RBF and linear_svm is equals to SVM with kernel lineal
     
-    - output_filename : Predicted output filename(*.npy)
+   - output_filename : Predicted output filename(*.npy)
     
   While Neural Network is executed in script cnn_test_tinc3.py(you can modify parameters such as the number of neurons, number of layers and others).
     
@@ -242,15 +244,15 @@ We use different pre-trained models of convolutional neural networks, these arch
 
   Where:
   
-    - output_data_train : Dataset train file name (*.npy)
+   - output_data_train : Dataset train file name (*.npy)
     
-    - output_cls_train : Label train filename (*.npy)
+   - output_cls_train : Label train filename (*.npy)
     
-    - output_data_test : Dataset test file name (*.npy)
+   - output_data_test : Dataset test file name (*.npy)
     
-    - output_cls_Test : Label test filename (*.npy)
+   - output_cls_Test : Label test filename (*.npy)
     
-    - file_path_save_model : Predicted output filename(*.ckpt)
+   - file_path_save_model : Predicted output filename(*.ckpt)
   
   
   
