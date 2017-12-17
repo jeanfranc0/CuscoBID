@@ -16,6 +16,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Bag-of-Words](#bag-of-words)
 
+- [Transfer Learning](#transfer-learning)
+
 ## Requirements
 
 - **To Transfer Learning**
@@ -78,6 +80,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
     - ~/Path-to-output-dataset/ : Output path
     
 ## Bag-of-Words
+
+<p align="center"><img width="50%" src="nips_2017.jpg" /></p>
     
 - **Build Codebook**
 
@@ -159,6 +163,14 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
     
     - file_path_save_model : Predicted output filename(*.ckpt)
 
-  
-  
+## Transfer Learning
+
+<p align="center"><img width="50%" src="nips_2017.jpg" /></p>
+
+- **Compute Transfer Values**
+
+We use different pre-trained models of convolutional neural networks, these architectures were provided by the framework [Keras](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3) ([VGG16, VGG19](https://arxiv.org/abs/1409.1556), [Xception](https://arxiv.org/abs/1610.02357)) and [Magnus Erik Hvass Pedersen](https://github.com/Hvass-Labs/TensorFlow-Tutorials)
+
+
+ 
               
