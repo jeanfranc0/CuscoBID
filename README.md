@@ -18,9 +18,9 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Transfer Learning](#transfer-learning)
 
-- [Publication](publications)
+- [Publication](#publications)
 
-- [Reference](references) 
+- [Reference](#references) 
 
 ## Requirements
 
