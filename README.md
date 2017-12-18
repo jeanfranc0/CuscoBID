@@ -258,7 +258,7 @@ We use different pre-trained models of convolutional neural networks, these arch
     
    - file_path_save_model : Predicted output filename(*.ckpt)
   
- ## Publication
+## Publication
  
  You can review our paper, published in the IEEE Xplore Digital Library
  
@@ -272,7 +272,7 @@ We use different pre-trained models of convolutional neural networks, these arch
   
     - John E. Vargas-Muñoz. Institute of Computing - University of Campinas, Campinas, Brazil
  
- ## Reference
+## Reference
  
  Finally, if you use the database or the code, do not forget to reference the work.
  
