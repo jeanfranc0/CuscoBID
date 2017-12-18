@@ -18,6 +18,8 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Transfer Learning](#transfer-learning)
 
+- [Prediction](#prediction)
+
 - [Publication](#publication)
 
 - [Reference](#reference) 
@@ -256,7 +258,14 @@ We use different pre-trained models of convolutional neural networks, these arch
    - output_cls_Test : Label test filename (*.npy)
     
    - file_path_save_model : Predicted output filename(*.ckpt)
+   
+## Prediction
+
+  We develop a prediction from the new trained model. That is, we identify the category of belonging to a new image of a historic building in the city of Cusco. 
   
+  We have three cells in 'Prediction_models.ipynb', The first line, the machine learning algorithm is applied
+ neural network, in the method 'main' 'saver = tf.train.import_meta_graph('model.ckpt.meta')' depends on the name of the previously generated file. The second line, represents a visualization of applying data augmentation. Finally, the machine learning algorithm is Support Vector Machine. We recommend using the last cell during the prediction process, because it presents the best results during this stage.
+   
 ## Publication
  
  You can review our paper, published in the IEEE Xplore Digital Library
@@ -273,7 +282,7 @@ We use different pre-trained models of convolutional neural networks, these arch
  
 ## Reference
  
- Finally, if you use the database or the code, do not forget to reference the work.
+ Finally, if you use the database or the code, do not forget to reference this work.
  
  @inproceedings{farfan2017towards,
   title={Towards accurate building recognition using convolutional neural networks},
