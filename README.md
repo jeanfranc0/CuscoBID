@@ -24,6 +24,46 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Reference](#reference) 
 
+## Dataset
+
+  - [First Version](https://drive.google.com/drive/folders/0BzMfOBUQtl7dMHJfSGgtVTRZRDQ?usp=sharing). This consists of 2000 images of 14 different historical buildings of the city of Cusco. Next, the class number and the name of the historic building that corresponds to it is presented
+  
+    | Class label    | Building name   | Image number|
+    | :---:         |     :---:       | :---:|
+    | 01    |  Casa del Inca Garcilaso     |  108    |
+    | 02      | Catedral del Cusco       |159    |
+    | 03      | La Compañia de Jesus       |176    |
+    | 04    | Coricancha     |  147|
+    | 05      | Cristo Blanco       |146|
+    | 06      | Templo de la Merced       |142|
+    | 07    | Mural de la Historia Inca    |  137|
+    | 08    | Paccha de Pumaqchupan   |  114    |
+    | 09      |  Pileta de San Blas      |139    |
+    | 10      | Inca Pachacutec      |129    |
+    | 11    | Sacsayhuaman     |  190|
+    | 12      | Iglesia de San Francisco       |135|
+    | 13      |  Iglesia de San Pedro     |146|
+    | 14      |Iglesia de Santo Domingo    |  132|
+  
+  - [Second Version](https://drive.google.com/open?id=0B_aI63-sG2GwVWhKR1Q4bXYxZUk). This consists of 4560 images of 14 different historical buildings of the city of Cusco. Next, the class number and the name of the historic building that corresponds to it is presented
+
+    | Class label    | Building name   | Image number|
+    | :---:         |     :---:       | :---:|
+    | 01    |  Casa del Inca Garcilaso     |  200    |
+    | 02      | Catedral del Cusco       |600    |
+    | 03      | La Compañia de Jesus       |600    |
+    | 04    | Coricancha     |  570|
+    | 05      | Cristo Blanco       |200|
+    | 06      | Templo de la Merced       |260|
+    | 07    | Mural de la Historia Inca    |  200|
+    | 08    | Paccha de Pumaqchupan   |  200    |
+    | 09      |  Pileta de San Blas      |320    |
+    | 10      | Inca Pachacutec      |300    |
+    | 11    | Sacsayhuaman     |  350|
+    | 12      | Iglesia de San Francisco       |250|
+    | 13      |  Iglesia de San Pedro     |280|
+    | 14      |Iglesia de Santo Domingo    |  230|
+
 ## Requirements
 
 - **To Transfer Learning**
