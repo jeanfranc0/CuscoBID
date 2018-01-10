@@ -24,7 +24,7 @@ Contributions are welcome. If you went to Cusco you can send us your photos to i
 
 - [Publication](#publication)
 
-- [Reference](#reference) 
+- [Citation](#citation) 
 
 ## Dataset
 
@@ -322,7 +322,7 @@ We use different pre-trained models of convolutional neural networks, these arch
   
     - John E. Vargas-Muñoz. Institute of Computing - University of Campinas, Campinas, Brazil
  
-## Reference
+## Citation
  
  Finally, if you use the database or the code, do not forget to reference this work.
  
